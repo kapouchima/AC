@@ -143,3 +143,40 @@ unsigned int UserManager_Search(char * uuid)
 
 
 
+
+
+
+
+
+
+
+
+
+
+char UserManager_Equal(User *usr1,User *usr2)
+{
+  char res=1,i;
+  
+  for(i=0;i<14;i++)
+    if(usr1->UUID[i]!=usr1->UUID[i])
+      {res=0;break;}
+      
+  return res;
+}
+
+
+
+
+
+
+char UserManager_Compare(User *usr,char *uuid)
+{
+  char res=1,i;
+
+  for(i=0;i<14;i++)
+    if(usr->UUID[i]!=uuid[i])
+      {res=0;break;}
+
+  return res;
+
+}

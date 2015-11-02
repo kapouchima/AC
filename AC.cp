@@ -31,6 +31,8 @@ void UserManager_Load(char *,User *);
 unsigned int UserManager_GetNewLoc();
 void UserManager_Save(User *);
 unsigned int UserManager_Search(char *);
+char UserManager_Equal(User *,User *);
+char UserManager_Compare(User *,char *);
 #line 5 "C:/Users/Kapouchima/Desktop/TAC/AC.c"
 void main() {
 

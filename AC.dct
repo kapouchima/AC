@@ -6485,7 +6485,9 @@ ulplvl
 ulplvl_bit
 ulpsink
 ulpsink_bit
+usermanager_compare
 usermanager_delete
+usermanager_equal
 usermanager_getnewloc
 usermanager_init
 usermanager_load

@@ -44,7 +44,9 @@ Path2=C:\Users\Kapouchima\Desktop\TAC\
 Path3=C:\Users\Kapouchima\Desktop\TAC\MemoryManager\
 Path4=C:\Users\Kapouchima\Desktop\TAC\UserManager\
 [HEADER_PATH]
-Count=0
+Count=2
+Path0=C:\Users\Kapouchima\Desktop\TAC\MemoryManager\
+Path1=C:\Users\Kapouchima\Desktop\TAC\UserManager\
 [HEADERS]
 Count=2
 File0=MemoryManager\MemoryManager.h

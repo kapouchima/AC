@@ -17,6 +17,8 @@ void UserManager_Load(char *,User *);
 unsigned int UserManager_GetNewLoc();
 void UserManager_Save(User *);
 unsigned int UserManager_Search(char *);
+char UserManager_Equal(User *,User *);
+char UserManager_Compare(User *,char *);
 #line 1 "c:/users/kapouchima/desktop/tac/usermanager/../memorymanager/memorymanager.h"
 
 
@@ -151,4 +153,32 @@ unsigned int UserManager_Search(char * uuid)
  return 0;
  else
  return i;
+}
+#line 156 "C:/Users/Kapouchima/Desktop/TAC/UserManager/UserManager.c"
+char UserManager_Equal(User *usr1,User *usr2)
+{
+ char res=1,i;
+
+ for(i=0;i<14;i++)
+ if(usr1->UUID[i]!=usr1->UUID[i])
+ {res=0;break;}
+
+ return res;
+}
+
+
+
+
+
+
+char UserManager_Compare(User *usr,char *uuid)
+{
+ char res=1,i;
+
+ for(i=0;i<14;i++)
+ if(usr->UUID[i]!=uuid[i])
+ {res=0;break;}
+
+ return res;
+
 }
