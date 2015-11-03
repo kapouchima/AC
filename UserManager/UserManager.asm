@@ -580,18 +580,18 @@ L_end_UserManager_Equal:
 
 _UserManager_Compare:
 
-;UserManager.c,172 :: 		char UserManager_Compare(User *usr,char *uuid)
-;UserManager.c,174 :: 		char res=1,i;
+;UserManager.c,176 :: 		char UserManager_Compare(User *usr,char *uuid)
+;UserManager.c,178 :: 		char res=1,i;
 	MOVLW       1
 	MOVWF       UserManager_Compare_res_L0+0 
-;UserManager.c,176 :: 		for(i=0;i<14;i++)
+;UserManager.c,180 :: 		for(i=0;i<14;i++)
 	CLRF        R1 
 L_UserManager_Compare27:
 	MOVLW       14
 	SUBWF       R1, 0 
 	BTFSC       STATUS+0, 0 
 	GOTO        L_UserManager_Compare28
-;UserManager.c,177 :: 		if(usr->UUID[i]!=uuid[i])
+;UserManager.c,181 :: 		if(usr->UUID[i]!=uuid[i])
 	MOVF        R1, 0 
 	ADDWF       FARG_UserManager_Compare_usr+0, 0 
 	MOVWF       FSR0 
@@ -608,19 +608,19 @@ L_UserManager_Compare27:
 	XORWF       POSTINC2+0, 0 
 	BTFSC       STATUS+0, 2 
 	GOTO        L_UserManager_Compare30
-;UserManager.c,178 :: 		{res=0;break;}
+;UserManager.c,182 :: 		{res=0;break;}
 	CLRF        UserManager_Compare_res_L0+0 
 	GOTO        L_UserManager_Compare28
 L_UserManager_Compare30:
-;UserManager.c,176 :: 		for(i=0;i<14;i++)
+;UserManager.c,180 :: 		for(i=0;i<14;i++)
 	INCF        R1, 1 
-;UserManager.c,178 :: 		{res=0;break;}
+;UserManager.c,182 :: 		{res=0;break;}
 	GOTO        L_UserManager_Compare27
 L_UserManager_Compare28:
-;UserManager.c,180 :: 		return res;
+;UserManager.c,184 :: 		return res;
 	MOVF        UserManager_Compare_res_L0+0, 0 
 	MOVWF       R0 
-;UserManager.c,182 :: 		}
+;UserManager.c,186 :: 		}
 L_end_UserManager_Compare:
 	RETURN      0
 ; end of _UserManager_Compare

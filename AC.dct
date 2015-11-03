@@ -4941,6 +4941,13 @@ sid9_rxm1sidh_bit
 sid9_txb0sidh_bit
 sid9_txb1sidh_bit
 sid9_txb2sidh_bit
+signalingsystem_addsignal
+signalingsystem_checksignal
+signalingsystem_clearallsignals
+signalingsystem_clearsignal
+signalingsystem_init
+signalingsystem_systemepoch
+signalingsystem_task
 sin
 sine3
 sinh

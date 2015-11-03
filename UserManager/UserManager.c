@@ -169,6 +169,10 @@ char UserManager_Equal(User *usr1,User *usr2)
 
 
 
+
+
+
+
 char UserManager_Compare(User *usr,char *uuid)
 {
   char res=1,i;
