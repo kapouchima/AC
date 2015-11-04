@@ -289,6 +289,7 @@ acqt1
 acqt1_bit
 acqt2
 acqt2_bit
+actiontaken
 adc_get_sample
 adc_get_sample_ptr
 adc_init
@@ -1829,6 +1830,11 @@ dlc3_txb1dlc_bit
 dlc3_txb2dlc_bit
 done
 done_bit
+doormanager_carentered
+doormanager_init
+doormanager_open
+doormanager_task
+doorshouldbe
 double2byte
 double2int
 double2longint
@@ -3697,6 +3703,7 @@ pss1bd0_bit
 pss1bd1
 pss1bd1_bit
 pstr1con
+pushopensequence
 pwcurrenthuffsymstarttable
 pwcurrenthuffsymstarttable
 pwcurrentquanttable

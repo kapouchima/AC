@@ -56,7 +56,7 @@ void SignalingSystem_ClearSignal(SignalingSystem *,char);
 void SignalingSystem_ClearAllSignals(SignalingSystem * ,char );
 void SignalingSystem_Task(SignalingSystem *);
 void SignalingSystem_Init(SignalingSystem *);
-#line 5 "C:/Users/Kapouchima/Desktop/TAC/AC.c"
+#line 6 "C:/Users/Kapouchima/Desktop/TAC/AC.c"
 void main() {
 
 }
