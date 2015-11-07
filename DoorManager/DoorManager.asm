@@ -896,7 +896,17 @@ _DoorManager_CarEntered:
 ;DoorManager.c,175 :: 		DoorShouldBe=1;
 	MOVLW       1
 	MOVWF       _DoorShouldBe+0 
-;DoorManager.c,176 :: 		SignalingSystem_AddSignal(& sys->SigSys,sys->CarPassTime,50);
+;DoorManager.c,176 :: 		SignalingSystem_ClearSignal(& sys->SigSys,50);
+	MOVLW       8
+	ADDWF       FARG_DoorManager_CarEntered_sys+0, 0 
+	MOVWF       FARG_SignalingSystem_ClearSignal+0 
+	MOVLW       0
+	ADDWFC      FARG_DoorManager_CarEntered_sys+1, 0 
+	MOVWF       FARG_SignalingSystem_ClearSignal+1 
+	MOVLW       50
+	MOVWF       FARG_SignalingSystem_ClearSignal+0 
+	CALL        _SignalingSystem_ClearSignal+0, 0
+;DoorManager.c,177 :: 		SignalingSystem_AddSignal(& sys->SigSys,sys->CarPassTime,50);
 	MOVLW       8
 	ADDWF       FARG_DoorManager_CarEntered_sys+0, 0 
 	MOVWF       FARG_SignalingSystem_AddSignal+0 
@@ -922,7 +932,7 @@ _DoorManager_CarEntered:
 	MOVLW       50
 	MOVWF       FARG_SignalingSystem_AddSignal+0 
 	CALL        _SignalingSystem_AddSignal+0, 0
-;DoorManager.c,177 :: 		}
+;DoorManager.c,178 :: 		}
 L_end_DoorManager_CarEntered:
 	RETURN      0
 ; end of _DoorManager_CarEntered

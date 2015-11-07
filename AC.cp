@@ -56,7 +56,27 @@ void SignalingSystem_ClearSignal(SignalingSystem *,char);
 void SignalingSystem_ClearAllSignals(SignalingSystem * ,char );
 void SignalingSystem_Task(SignalingSystem *);
 void SignalingSystem_Init(SignalingSystem *);
-#line 6 "C:/Users/Kapouchima/Desktop/TAC/AC.c"
+#line 1 "c:/users/kapouchima/desktop/tac/doormanager/doormanager.h"
+#line 1 "c:/users/kapouchima/desktop/tac/doormanager/../signaling/signaling.h"
+#line 13 "c:/users/kapouchima/desktop/tac/doormanager/doormanager.h"
+typedef struct{
+ char Type;
+ char CarPassTime;
+ char OpenTime;
+ char CloseTime;
+ char AutoCloseTime;
+ char InvalidTime;
+ char IRMode;
+ char State;
+ SignalingSystem SigSys;
+ unsigned long ClosingStartTime;
+}Door;
+
+
+void DoorManager_Init(Door *);
+void DoorManager_Task(Door *);
+void DoorManager_CarEntered(Door *);
+#line 7 "C:/Users/Kapouchima/Desktop/TAC/AC.c"
 void main() {
 
 }

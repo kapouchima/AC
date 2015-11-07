@@ -173,5 +173,6 @@ void DoorManager_Open(Door *sys)
 void DoorManager_CarEntered(Door *sys)
 {
   DoorShouldBe=1;
+  SignalingSystem_ClearSignal(& sys->SigSys,50);
   SignalingSystem_AddSignal(& sys->SigSys,sys->CarPassTime,50);
 }

@@ -48,10 +48,11 @@ Path4=C:\Users\Kapouchima\Desktop\TAC\UserManager\
 Path5=C:\Users\Kapouchima\Desktop\TAC\Signaling\
 Path6=C:\Users\Kapouchima\Desktop\TAC\DoorManager\
 [HEADER_PATH]
-Count=3
+Count=4
 Path0=C:\Users\Kapouchima\Desktop\TAC\MemoryManager\
 Path1=C:\Users\Kapouchima\Desktop\TAC\UserManager\
 Path2=C:\Users\Kapouchima\Desktop\TAC\Signaling\
+Path3=C:\Users\Kapouchima\Desktop\TAC\DoorManager\
 [HEADERS]
 Count=4
 File0=MemoryManager\MemoryManager.h
