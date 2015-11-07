@@ -1671,6 +1671,7 @@ cpol_cm1con_bit
 cpol_cm1con1_bit
 cpol_cm2con1_bit
 cr
+crccheck
 cref
 cref_bit
 cref_cm1con_bit
@@ -3670,6 +3671,7 @@ preinc0
 preinc1
 preinc2
 printout
+processpacket
 prod
 prodh
 prodl
@@ -3921,6 +3923,10 @@ re3
 re3_bit
 read_write
 read_write_bit
+readermanager_datarecieved
+readermanager_init
+readermanager_task
+readermanager_timeoutepoch
 rec0
 rec0_bit
 rec1

@@ -76,7 +76,32 @@ typedef struct{
 void DoorManager_Init(Door *);
 void DoorManager_Task(Door *);
 void DoorManager_CarEntered(Door *);
-#line 7 "C:/Users/Kapouchima/Desktop/TAC/AC.c"
+#line 1 "c:/users/kapouchima/desktop/tac/readermanager/readermanager.h"
+
+
+
+
+
+
+
+
+
+
+typedef struct
+{
+ char TimeOutCounter;
+ char BufferCounter;
+ char Buffer[ 20 ];
+ char TagInfo[ 12 ];
+ char TagExists;
+}Reader;
+
+
+void ReaderManager_Init(Reader *);
+void ReaderManager_DataRecieved(Reader *, char);
+void ReaderManager_Task(Reader *);
+void ReaderManager_TimeOutEPOCH(Reader *);
+#line 8 "C:/Users/Kapouchima/Desktop/TAC/AC.c"
 void main() {
 
 }
